@@ -1,0 +1,29 @@
+main>section{
+    margin: 0 50px;
+}
+
+header nav .valgtSide, #mobilDropDownMeny .valgtSide {
+    color: #da0000;
+}
+
+
+#sideTittel {
+    margin: 20px 0 50px;
+    padding: 10px;
+    border-bottom: solid grey 1px;
+}
+#sideTittel>div {
+    display: flex;
+}
+#sideTittel h1 {
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px 20px;
+    margin: 50px;
+    border-top: solid #1b1b1b 8px;
+    border-right: solid #1b1b1b 8px;
+    border-top-right-radius: 20px;
+}

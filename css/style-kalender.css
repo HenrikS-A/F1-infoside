@@ -2,7 +2,7 @@ main>section{
     margin: 0 50px;
 }
 
-header nav .valgtSide {
+header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     color: #da0000;
 }
 
