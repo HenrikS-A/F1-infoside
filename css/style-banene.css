@@ -6,7 +6,6 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     color: #da0000;
 }
 
-
 #sideTittel {
     margin: 20px 0 50px;
     padding: 10px;
@@ -27,3 +26,229 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     border-right: solid #1b1b1b 8px;
     border-top-right-radius: 20px;
 }
+
+
+
+#kart {
+    position: relative;
+}
+#kart img {
+    width: 100%;
+}
+
+#kart .pin {
+    background: #da0000;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    width: 40px;
+    border-top: 10px #2a2a2a solid;
+    transition: 0.5s;
+}
+#kart .pin:before {
+    border-top: 17.5px solid #da0000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 14.6px;
+    width: 0;
+    transition: 0.5s;
+}
+#kart .pin:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+#kart.pin:before:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#kart p {
+    position: absolute;
+    
+    transform: translate(-35%, -275%);
+
+    background-color: #2a2a2a;
+    color: white;
+    font-weight: 600;
+
+    padding: 5px 10px;
+    width: 120px;
+    text-align: center;
+    display: none;
+}
+
+
+#kart #canadaPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 23%;
+    top: 24%;
+}
+#canadaPosisjon #canadaPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#canadaPin>.pin:hover ~ #canadaTekst {
+    display: block;
+}
+#kart #texasPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 13%;
+    top: 36%;
+}
+#texasPosisjon #texasPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#texasPin>.pin:hover ~ #texasTekst {
+    display: block;
+}
+#kart #miamiPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 18.2%;
+    top: 38%;
+}
+#miamiPosisjon #miamiPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#miamiPin>.pin:hover ~ #miamiTekst {
+    display: block;
+}
+#kart #mexicoPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 11.8%;
+    top: 44%;
+}
+#mexicoPosisjon #mexicoPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#mexicoPin>.pin:hover ~ #mexicoTekst {
+    display: block;
+}
+#kart #brasilPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 29%;
+    top: 75.5%;
+}
+#brasilPosisjon #brasilPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#brasilPin>.pin:hover ~ #BrasilTekst {
+    display: block;
+}
+#kart #englandPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 45.2%;
+    top: 20%;
+}
+#englandPosisjon #englandPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#englandPin>.pin:hover ~ #englandTekst {
+    display: block;
+}
+#kart #europaPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 49%;
+    top: 24%;
+}
+#europaPosisjon #europaPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#europaPin>.pin:hover ~ #europaTekst {
+    display: block;
+}
+#kart #aserbajdsjanPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 60.5%;
+    top: 28.5%;
+}
+#aserbajdsjanPosisjon #aserbajdsjanPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#aserbajdsjanPin>.pin:hover ~ #aserbajdsjanTekst {
+    display: block;
+}
+#kart #midtostenPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 62%;
+    top: 43%;
+}
+#midtostenPosisjon #midtostenPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#midtostenPin>.pin:hover ~ #midtostenTekst {
+    display: block;
+}
+#kart #singaporePosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 80.7%;
+    top: 56.5%;
+}
+#singaporePosisjon #singaporePin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#singaporePin>.pin:hover ~ #singaporeTekst {
+    display: block;
+}
+#kart #japanPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 89.7%;
+    top: 32%;
+}
+#japanPosisjon #japanPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#japanPin>.pin:hover ~ #japanTekst {
+    display: block;
+}
+#kart #australiaPosisjon {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 90%;
+    top: 86%;
+}
+#australiaPosisjon #australiaPin {
+    position: absolute;
+    transform: translate(-50%, -140%);
+}
+#australiaPin>.pin:hover ~ #australiaTekst {
+    display: block;
+}
+
