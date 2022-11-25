@@ -69,19 +69,16 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
 }
 #kart p {
     position: absolute;
-    
-    transform: translate(-35%, -275%);
-
+    transform: translate(-35%, -260%);
     background-color: #2a2a2a;
     color: white;
     font-weight: 600;
-
     padding: 5px 10px;
     width: 120px;
     text-align: center;
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
-
 
 #kart #canadaPosisjon {
     width: 1px;
@@ -95,7 +92,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #canadaPin>.pin:hover ~ #canadaTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #texasPosisjon {
     width: 1px;
@@ -109,7 +107,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #texasPin>.pin:hover ~ #texasTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #miamiPosisjon {
     width: 1px;
@@ -123,7 +122,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #miamiPin>.pin:hover ~ #miamiTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #mexicoPosisjon {
     width: 1px;
@@ -137,7 +137,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #mexicoPin>.pin:hover ~ #mexicoTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #brasilPosisjon {
     width: 1px;
@@ -150,8 +151,9 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     position: absolute;
     transform: translate(-50%, -140%);
 }
-#brasilPin>.pin:hover ~ #BrasilTekst {
-    display: block;
+#brasilPin>.pin:hover ~ #brasilTekst {
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #englandPosisjon {
     width: 1px;
@@ -165,7 +167,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #englandPin>.pin:hover ~ #englandTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #europaPosisjon {
     width: 1px;
@@ -179,7 +182,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #europaPin>.pin:hover ~ #europaTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #aserbajdsjanPosisjon {
     width: 1px;
@@ -193,7 +197,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #aserbajdsjanPin>.pin:hover ~ #aserbajdsjanTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #midtostenPosisjon {
     width: 1px;
@@ -207,7 +212,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #midtostenPin>.pin:hover ~ #midtostenTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #singaporePosisjon {
     width: 1px;
@@ -221,7 +227,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #singaporePin>.pin:hover ~ #singaporeTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #japanPosisjon {
     width: 1px;
@@ -235,7 +242,8 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #japanPin>.pin:hover ~ #japanTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 #kart #australiaPosisjon {
     width: 1px;
@@ -249,6 +257,7 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transform: translate(-50%, -140%);
 }
 #australiaPin>.pin:hover ~ #australiaTekst {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
 
