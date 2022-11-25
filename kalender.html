@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Kalender</title>
+    <link rel="icon" href="./ikoner/f1-logo-sort.png">
+
+    <link rel="stylesheet" href="./css/style-layout.css">
+    <link rel="stylesheet" href="css/style-kalender.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="hovedNav">
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="./ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+                </a>
+            </div>
+            <div id="hovedNavLenker">
+                <a href="kalender.html">
+                    <div class="borderHøyre">
+                        <h1 class="valgtSide">Kalender</h1>
+                    </div>
+                </a>
+                <a class="dropDown" onclick="visDropDown()">
+                    <div class="borderHøyre pilIkon">
+                        <h1>Resultater</h1>
+                        <div class="thick-arrow-down"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1>Førerne</h1>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1>Teamene</h1>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h1>Banene</h1>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <nav class="dropDownMeny">
+            <div class="borderHøyre">
+                <a href="forer-resultater.html">Fører resultater</a>
+            </div>
+            <div class="dropDownMenyMargin">
+                <a href="konstruktor-resultater.html">Konstruktør resultater</a>
+            </div>
+        </nav>
+        <nav id="mobilNav">
+            <div>
+                <a href="index.html">
+                    <img class="logo" id="mobilLogo" src="./ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+                </a>
+            </div>
+            <div id="mobilMenyIkon">
+                <a onclick="visMobilDropDown()">
+                    <img src="./ikoner/hamburger-menu-ikon.png" alt="Meny knapp">
+                </a>
+            </div>
+            <div id="mobilExitIkon">
+                <a onclick="fjernMobilDropDown()">
+                    <img  src="./ikoner/exit-ikon.png" alt="Lukk meny knapp">
+                </a>
+            </div>
+        </nav>
+        <nav id="mobilDropDownMeny">
+            <a class="valgtSide" class="mobilMenyBorder" href="kalender.html">
+                Kalender
+            </a>
+            <a class="mobilMenyBorder" href="forer-resultater.html">
+                Fører <br> resultater
+            </a>
+            <a class="mobilMenyBorder" href="konstruktor-resultater.html">
+                Konstruktør <br> resultater
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Førerne
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Teamene
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Banene
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div id="mobilMenyOverlay"></div>
+            <div onclick="tilToppen()" id="tilToppen"><img id="pilOpp" src="./ikoner/pil-opp-ikon.png" alt="Pil opp ikon"></div>
+        </div>
+        <section>
+            <div id="sideTittel">
+                <h1>F1 kalender 2022</h1>
+                
+            </div>
+            
+            <section class="tabell">
+                <div class="tabellGrid">
+                    <div class="kolonneNavn pcNr">Runde nr.</div>
+                    <div class="kolonneNavn mobilNr">Nr.</div>
+                    <div class="kolonneNavn">Dato</div>
+                    <div class="kolonneNavn">Land</div>
+                    <div class="kolonneNavn førerNavn">Vunnet av</div>
+                    <div class="kolonneNavn mediumSkjermFjern">Team</div>
+                    <div class="kolonneNavn mediumSkjermFjern">Raskeste runde</div>
+                </div>
+    
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 1</div>
+                    <div class="mobilNr">1</div>
+                    <div>20. mars</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/bahrain-flagg.png" alt="Bahrains flagg">
+                            <p>Bahrain</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Charles Leclerc</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Ferrari</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:34.570</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 2</div>
+                    <div class="mobilNr">2</div>
+                    <div>27. mars</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/saudi-arabia-flagg.png" alt="Saudi Arabias flagg">
+                            <p>Saudi Arabia</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:31.634</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 3</div>
+                    <div class="mobilNr">3</div>
+                    <div>10. april</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/australia-flagg.png" alt="Australias flagg">
+                            <p>Australia</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Charles Leclerc</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Ferrari</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:20.260</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 4</div>
+                    <div class="mobilNr">4</div>
+                    <div>24. april</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/italia-flagg.png" alt="Italias flagg">
+                            <p>Italia</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:18.446</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 5</div>
+                    <div class="mobilNr">5</div>
+                    <div>08. mai</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/usa-flagg.png" alt="USAs flagg">
+                            <p>USA</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:31.361</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 6</div>
+                    <div class="mobilNr">6</div>
+                    <div>22. mai</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/spania-flagg.png" alt="Spanias flagg">
+                            <p>Spania</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Ferrari</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:24.108</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 7</div>
+                    <div class="mobilNr">7</div>
+                    <div>29. mai</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/monaco-flagg.png" alt="Monacos flagg">
+                            <p>Monaco</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Sergio Pérez</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:14.693</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 8</div>
+                    <div class="mobilNr">8</div>
+                    <div>12. juni</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/aserbajdsjan-flagg.png" alt="Aserbajdsjans flagg">
+                            <p>Aserbajdsjan</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:46.046</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 9</div>
+                    <div class="mobilNr">9</div>
+                    <div>19. juni</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/canada-flagg.png" alt="Canadas flagg">
+                            <p>Canada</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:15.749</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 10</div>
+                    <div class="mobilNr">10</div>
+                    <div>03. juli</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/storbritannia-flagg.png" alt="Storbritannias flagg">
+                            <p>Storbritannia</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Carlos Sainz</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Ferrari</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:30.510</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 11</div>
+                    <div class="mobilNr">11</div>
+                    <div>10. juli</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/østerriket-flagg.png" alt="Østerrikets flagg">
+                            <p>Østerriket</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Charles Leclerc</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Ferrari</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:07.275</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 12</div>
+                    <div class="mobilNr">12</div>
+                    <div>24. juli</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/frankrike-flagg.png" alt="Frankrike flagg">
+                            <p>Frankrike</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:35.781</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 13</div>
+                    <div class="mobilNr">13</div>
+                    <div>31. juli</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/ungarn-flagg.png" alt="Ungarns flagg">
+                            <p>Ungarn</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:21.386</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 14</div>
+                    <div class="mobilNr">14</div>
+                    <div>28. august</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/belgia-flagg.png" alt="Belgias flagg">
+                            <p>Belgia</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:49.354</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 15</div>
+                    <div class="mobilNr">15</div>
+                    <div>04. september</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/nederland-flagg.png" alt="Nederlands flagg">
+                            <p>Nederland</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:13.652</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 16</div>
+                    <div class="mobilNr">16</div>
+                    <div>11. september</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/italia-flagg.png" alt="Italias flagg">
+                            <p>Italia</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:24.030</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 17</div>
+                    <div class="mobilNr">17</div>
+                    <div>02. oktober</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/singapore-flagg.png" alt="Singapores flagg">
+                            <p>Singapore</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Sergio Pérez</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:46.458</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 18</div>
+                    <div class="mobilNr">18</div>
+                    <div>09. oktober</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/japan-flagg.png" alt="Japans flagg">
+                            <p>Japan</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:44.411</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 19</div>
+                    <div class="mobilNr">19</div>
+                    <div>23. oktober</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/usa-flagg.png" alt="USAs flagg">
+                            <p>USA</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:38.788</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 20</div>
+                    <div class="mobilNr">20</div>
+                    <div>30. oktober</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/mexico-flagg.png" alt="Mexicos flagg">
+                            <p>México</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:20.153</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 21</div>
+                    <div class="mobilNr">21</div>
+                    <div>13. november</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/brasil-flagg.png" alt="Brasils flagg">
+                            <p>Brasil</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">George Russel</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#">Mercedes</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:13.785</div>
+                </div>
+                <div class="tabellGrid">
+                    <div class="pcNr">Runde 22</div>
+                    <div class="mobilNr">22</div>
+                    <div>20. november</div>
+                    <div>
+                        <a class="gridLand" href="#">
+                            <img src="./ikoner/flagg-ikoner/uae-flagg.png" alt="UAEs flagg">
+                            <p>Abu Dhabi</p>
+                        </a>
+                    </div>
+                    <div class="førerNavn">
+                        <a href="#">Max Verstappen</a>
+                    </div>
+                    <div class="mediumSkjermFjern">
+                        <a href="#"> Red Bull</a>
+                    </div>
+                    <div class="mediumSkjermFjern">1:28.391</div>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="footerSoMe">
+            <a target="_blank" href="https://www.instagram.com/f1/">
+                <img src="./ikoner/instagram-ikon.png" alt="Instagram ikon">
+            </a>
+            <a target="_blank" href="https://twitter.com/f1">
+                <img id="twitterLogo" src="./ikoner/twitter-ikon.png" alt="Twitter ikon">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/Formula1/">
+                <img src="./ikoner/facebook-ikon.png" alt="Facebook ikon">
+            </a>
+        </section>
+        <section class="footerMeny">
+            <div>
+                <a href="kalender.html">Kalender</a>
+                <a href="forer-resultater.html">Fører resultater</a>
+                <a href="konstruktor-resultater.html">Konstruktør resultater</a>
+            </div>
+            <div>
+                <a href="#">Førerne</a>
+                <a href="#">Teamene</a>
+                <a href="#">Banene</a>
+            </div>
+        </section>
+        <section class="footerInfo">
+            <div>
+                <img src="./ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+            </div>
+            <div id="kreditering">
+                <h2>Denne nettsiden er laget av:</h2>
+                <!-- Gjør at den lager en mail til mailadressen min -->
+                <a href="mailto:henrikstro@viken.no">Henrik Strøm-Andersen</a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/knapp-funksjoner.js"></script>
+</body>
+</html>
