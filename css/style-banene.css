@@ -31,6 +31,7 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
 
 #kart {
     position: relative;
+    margin-bottom: 50px;
 }
 #kart img {
     width: 100%;
@@ -261,3 +262,36 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     transition: 0.3s;
 }
 
+
+
+#gridContainer{
+    padding-top: 40px;
+    border-top: dotted black 1px;
+}
+
+.gridInnhold {
+    width: 600px;
+    background-color: rgb(255, 249, 181);
+}
+
+.baneBilde {
+    position: relative;
+}
+.baneBilde h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 32px;
+    position: absolute;
+    height: 45px;
+    width: 160px;
+    left: 0; right: 0; top: 0; bottom: 0;
+    margin: auto;
+    text-align: center;
+
+}
+.baneBilde img {
+    width: 100%;
+    filter: brightness(60%);
+    border-top-right-radius: 30px;
+}
