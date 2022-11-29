@@ -36,49 +36,73 @@ function scrollNed() {
 };
 
 
+
+function shadowEffektFunksjon() {
+    const navn = "Montreal";
+    //Legger til shadow bak banen som scrolles til
+    document.getElementById(navn).style.boxShadow = "20px 20px 20px yellow";
+    
+    // Etter 5s fjernes shadow-en
+    setTimeout( () => {
+        document.getElementById(navn).style.boxShadow = "none";
+    }, 5000);
+}
+
 function scrollMontreal() {
     const navn = "Montreal";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    //henter fram funksjonen og kjører den
+    shadowEffektFunksjon.call(this);
 }
 function scrollTexas() {
     const navn = "Texas";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollMiami() {
     const navn = "Miami";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollMexico() {
     const navn = "Mexico";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollBrasil() {
     const navn = "Brasil";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollEuropa() {
     const navn = "Europa";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollBaku() {
     const navn = "Baku";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollMidtøsten() {
     const navn = "Midtøsten";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollJapan() {
     const navn = "Japan";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollSingapore() {
     const navn = "Singapore";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 function scrollAustralia() {
     const navn = "Australia";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+    shadowEffektFunksjon.call(this);
 }
 
 

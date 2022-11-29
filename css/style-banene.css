@@ -265,6 +265,7 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     background-color: rgb(242, 242, 242);
     border-top-right-radius: 30px;
     position: relative;
+    transition: 2s;
 }
 .baneBilde {
     position: relative;
