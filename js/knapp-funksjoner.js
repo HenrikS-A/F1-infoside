@@ -36,6 +36,53 @@ function scrollNed() {
 };
 
 
+function scrollMontreal() {
+    const navn = "Montreal";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollTexas() {
+    const navn = "Texas";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollMiami() {
+    const navn = "Miami";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollMexico() {
+    const navn = "Mexico";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollBrasil() {
+    const navn = "Brasil";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollEuropa() {
+    const navn = "Europa";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollBaku() {
+    const navn = "Baku";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollMidtøsten() {
+    const navn = "Midtøsten";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollJapan() {
+    const navn = "Japan";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollSingapore() {
+    const navn = "Singapore";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+function scrollAustralia() {
+    const navn = "Australia";
+    document.getElementById(navn).scrollIntoView({behavior: "smooth"});
+}
+
+
+
 /* (Kode som Thor viste,)
 addEventListener("resize", () => {
     if (window.innerWidth > 900){

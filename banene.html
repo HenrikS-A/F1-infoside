@@ -112,73 +112,67 @@
             <div id="kart">
                 <img src="./bilder/verdenskart.png" alt="Verdenskart">
                 <div id="canadaPosisjon">
-                    <div id="canadaPin">
+                    <div id="canadaPin" onclick="scrollMontreal()">
                         <div id="test1"class="pin"></div>
                         <p id="canadaTekst">Montréal</p>
                     </div>
                 </div>
                 <div id="texasPosisjon">
-                    <div id="texasPin">
+                    <div id="texasPin" onclick="scrollTexas()">
                         <div class="pin"></div>
                         <p id="texasTekst">Texas</p>
                     </div>
                 </div>
                 <div id="miamiPosisjon">
-                    <div id="miamiPin">
+                    <div id="miamiPin" onclick="scrollMiami()">
                         <div class="pin"></div>
                         <p id="miamiTekst">Miami</p>
                     </div>
                 </div>
                 <div id="mexicoPosisjon">
-                    <div id="mexicoPin">
+                    <div id="mexicoPin" onclick="scrollMexico()">
                         <div class="pin"></div>
                         <p id="mexicoTekst">Mexico by</p>
                     </div>
                 </div>
                 <div id="brasilPosisjon">
-                    <div id="brasilPin">
+                    <div id="brasilPin" onclick="scrollBrasil()">
                         <div class="pin"></div>
                         <p id="brasilTekst">São Paulo</p>
                     </div>
                 </div>
-                <div id="englandPosisjon">
-                    <div id="englandPin">
-                        <div class="pin"></div>
-                        <p id="englandTekst">Silverstone</p>
-                    </div>
-                </div>
                 <div id="europaPosisjon">
-                    <div id="europaPin">
+                    <div id="europaPin" onclick="scrollEuropa()">
                         <div class="pin"></div>
                         <p id="europaTekst">Europa</p>
                     </div>
                 </div>
                 <div id="aserbajdsjanPosisjon">
-                    <div id="aserbajdsjanPin">
+                    <div id="aserbajdsjanPin" onclick="scrollBaku()">
                         <div class="pin"></div>
                         <p id="aserbajdsjanTekst">Baku</p>
                     </div>
                 </div>
                 <div id="midtostenPosisjon">
-                    <div id="midtostenPin">
+                    <div id="midtostenPin" onclick="scrollMidtøsten()">
                         <div class="pin"></div>
                         <p id="midtostenTekst">Midtøsten</p>
                     </div>
                 </div>
                 <div id="singaporePosisjon">
-                    <div id="singaporePin">
+                    <div id="singaporePin" onclick="scrollSingapore()">
                         <div class="pin"></div>
                         <p id="singaporeTekst">Singapore</p>
                     </div>
                 </div>
                 <div id="japanPosisjon">
-                    <div id="japanPin">
+                    <div id="japanPin" onclick="scrollJapan()">
                         <div class="pin"></div>
                         <p id="japanTekst">Suzuka</p>
                     </div>
                 </div>
                 <div id="australiaPosisjon">
-                    <div id="australiaPin">
+                    <div id="australiaPin" onclick="scrollAustralia()">
                         <div class="pin"></div>
                         <p id="australiaTekst">Melbourne</p>
                     </div>
@@ -186,44 +180,650 @@
                 
             </div>
 
-            <div> <!-- Denne er for å lage litt grå bakgrunn og padding rund gridden. -->
-                <div id="gridContainer">
-                    <div class="gridInnhold">
-                        <div class="baneBilde">
-                            <img src="./bilder/bahrain-bane.jpeg" alt="Bahrain bane bilde">
-                            <h2>Bahrain</h2>
-                        </div>
-                        <h6>Banenavn</h6>
-                        <div>
-                            <p>Bahrain Intertational Circuit</p>
-                            <img src="./ikoner/flagg-ikoner/bahrain-flagg.png" alt="Bahrain flagg bilde">
-                        </div>
-                        <div class="innholdGrid">
-                            <div>
-                                <h6>Antall runder</h6>
-                                <h5>57</h5>
-                            </div>
-                            <div>
-                                <h6>Første løp</h6>
-                                <h5>2004</h5>
-                            </div>
-                            <div>
-                                <h6>Banelengde</h6>
-                                <h5>5 412km</h5>
-                            </div>
-                            <div>
-                                <h6>Banerekord</h6>
-                                <h5>1:31.447</h5>
-                            </div>
-                        </div>
-                        
-                        <p>20. mars</p>
+            <div id="gridContainer">
+                <h1 id="Midtøsten">Midtøsten:</h1>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/bahrain-bane.jpeg" alt="Bahrain bane bilde">
+                        <h2>Bahrain</h2>
                     </div>
-
-
+                    <div class="baneNavn">
+                        <p>Bahrain International Circuit</p>
+                        <img src="./ikoner/flagg-ikoner/bahrain-flagg.png" alt="Bahrain flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,412 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:31.447</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>2004</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>57</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">20. mars</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/saudi-arabia-bane.jpeg" alt="Saudi Arabia bane bilde">
+                        <h2>Saudi Arabia</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Jeddah Corniche Circuit</p>
+                        <img src="./ikoner/flagg-ikoner/saudi-arabia-flagg.png" alt="Saudi Arabia flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>6,174 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:30.734</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>2021</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>50</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">27. mars</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/uae-bane.jpeg" alt="UAE bane bilde">
+                        <h2>De forente arabiske emirater</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Yas Marina Circuit</p>
+                        <img src="./ikoner/flagg-ikoner/uae-flagg.png" alt="UAEs flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,281 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:26.103</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>2009</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>58</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">20. november</a>
+                </div>
+                <div class="gridMellomrom"></div>
+                <div id="Australia" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/australia-bane.jpeg" alt="Australia bane bilde">
+                        <h2>Australia</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Albert Park Circuit</p>
+                        <img src="./ikoner/flagg-ikoner/australia-flagg.png" alt="Australias flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,281 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:20.260</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1996</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>58</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">10. april</a>
+                </div>
+                <div id="Singapore" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/singapore-bane.jpeg" alt="Singapore bane bilde">
+                        <h2>Singapore</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Marina Bay Street Circuit</p>
+                        <img src="./ikoner/flagg-ikoner/singapore-flagg.png" alt="Singapore flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,063 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:41.905</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>2008</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>61</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">2. oktober</a>
+                </div>
+                <div id="Japan" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/japan-bane.jpeg" alt="Japan bane bilde">
+                        <h2>Japan</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Suzuka International Racing Course</p>
+                        <img src="./ikoner/flagg-ikoner/japan-flagg.png" alt="Japans flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,807 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:30.983</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1987</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>53</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">9. oktober</a>
+                </div>
+                <div id="Baku" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/aserbajdsjan-bane.jpeg" alt="Aserbajdsjan bane bilde">
+                        <h2>Aserbajdsjan</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Baku City Circuit</p>
+                        <img src="./ikoner/flagg-ikoner/aserbajdsjan-flagg.png" alt="Aserbajdsjans flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>6,003 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:43.009</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>2016</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>51</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">12. juni</a>
+                </div>
+                <div id="Brasil" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/brasil-bane.jpeg" alt="Brasil bane bilde">
+                        <h2>Brasil</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Autódromo José Carlos Pace</p>
+                        <img src="./ikoner/flagg-ikoner/brasil-flagg.png" alt="Brasils flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,309 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:10.540</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1973</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>71</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">13. november</a>
+                </div>
+                <div id="Mexico" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/mexico-bane.jpeg" alt="Mexico bane bilde">
+                        <h2>Mexico</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Autódromo Hermanos Rodríguez</p>
+                        <img src="./ikoner/flagg-ikoner/mexico-flagg.png" alt="Mexico flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,304 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:17.774</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1963</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>71</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">30. oktober</a>
+                </div>
+                <div id="Miami" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/usa-miami-bane.jpeg" alt="Miami bane bilde">
+                        <h2>USA</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Miami International Autodrome</p>
+                        <img src="./ikoner/flagg-ikoner/usa-flagg.png" alt="USAs flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,412 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:31.361</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>2022</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>57</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">8. mai</a>
+                </div>
+                <div id="Texas" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/usa-texas-bane.jpeg" alt="Texas bane bilde">
+                        <h2>USA</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Circuit of The Americas</p>
+                        <img src="./ikoner/flagg-ikoner/bahrain-flagg.png" alt="Bahrain flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,513 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:36.169</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>2012</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>56</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">23. oktober</a>
+                </div>
+                <div id="Montreal" class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/canada-bane.jpeg" alt="Canada bane bilde">
+                        <h2>Canada</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Circuit Gilles-Villeneuve</p>
+                        <img src="./ikoner/flagg-ikoner/canada-flagg.png" alt="Canada flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,361 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:13.078</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1978</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>70</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">19. juni</a>
+                </div>
+                <div class="gridMellomrom"></div>
+                <h1 id="Europa">Europa:</h1>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/italia-imola-bane.jpeg" alt="Imola bane bilde">
+                        <h2>Italia</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Autodromo Enzo e Dino Ferrari</p>
+                        <img src="./ikoner/flagg-ikoner/italia-flagg.png" alt="Italias flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,909 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:15.484</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1980</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>63</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">24. april</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/spania-bane.jpeg" alt="Spania bane bilde">
+                        <h2>Spania</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Circuit de Barcelona-Catalunya</p>
+                        <img src="./ikoner/flagg-ikoner/spania-flagg.png" alt="Spanias flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,675 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:18.149</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1991</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>66</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">22. mai</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/monaco-bane.jpeg" alt="Monaco bane bilde">
+                        <h2>Monaco</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Circuit de Monaco</p>
+                        <img src="./ikoner/flagg-ikoner/monaco-flagg.png" alt="Monacos flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>3,337 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:12.909</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1950</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>78</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">29. mai</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/storbritannia-bane.jpeg" alt="Storbritannia bane bilde">
+                        <h2>Storbritannia</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Silverstone Circuit</p>
+                        <img src="./ikoner/flagg-ikoner/storbritannia-flagg.png" alt="Storbritannia flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,891 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:27.097</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1950</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>52</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">3. juli</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/østerrike-bane.jpeg" alt="Østerrike bane bilde">
+                        <h2>Østerrike</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Red Bull Ring</p>
+                        <img src="./ikoner/flagg-ikoner/østerriket-flagg.png" alt="Østerrikets flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,318 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:05.619</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1970</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>71</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">10. juli</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/frankrike-bane.jpeg" alt="Frankrike bane bilde">
+                        <h2>Frankrike</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Circuit Paul Ricard</p>
+                        <img src="./ikoner/flagg-ikoner/frankrike-flagg.png" alt="Frankrike flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,842 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:32.740</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1971</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>53</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">24. juli</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/ungarn-bane.jpeg" alt="Ungarn bane bilde">
+                        <h2>Ungarn</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Hungaroring</p>
+                        <img src="./ikoner/flagg-ikoner/ungarn-flagg.png" alt="Ungarn flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,381 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:16.627</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1986</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>70</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">31. juli</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/belgia-bane.jpeg" alt="Belgia bane bilde">
+                        <h2>Belgia</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Circuit de Spa-Francorchamps</p>
+                        <img src="./ikoner/flagg-ikoner/belgia-flagg.png" alt="Belgia flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>7,004 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:46.286</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1950</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>44</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">28. august</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/nederland-bane.jpeg" alt="Nederland bane bilde">
+                        <h2>Nederland</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Circuit Zandvoort</p>
+                        <img src="./ikoner/flagg-ikoner/nederland-flagg.png" alt="Nederlands flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>4,259 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:11.097</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1952</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>72</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">4. september</a>
+                </div>
+                <div class="gridInnhold">
+                    <div class="baneBilde">
+                        <img src="./bilder/italia-monza-bane.jpeg" alt="Monza bane bilde">
+                        <h2>Italia</h2>
+                    </div>
+                    <div class="baneNavn">
+                        <p>Autodromo Nazionale Monza</p>
+                        <img src="./ikoner/flagg-ikoner/italia-flagg.png" alt="Italias flagg bilde">
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h6>Banelengde</h6>
+                            <h5>5,793 km</h5>
+                        </div>
+                        <div>
+                            <h6>Banerekord</h6>
+                            <h5>1:21.046</h5>
+                        </div>
+                        <div>
+                            <h6>Første løp</h6>
+                            <h5>1950</h5>
+                        </div>
+                        <div>
+                            <h6>Antall runder</h6>
+                            <h5>53</h5>
+                        </div>
+                    </div>
+                    <a href="./kalender.html">11. september</a>
                 </div>
             </div>
-
 
         </section>
     </main>
