@@ -260,6 +260,7 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     grid-column: span 3;
     margin:0;
     margin-bottom: -20px;
+    transition: 2s;
 }
 .gridInnhold {
     background-color: rgb(242, 242, 242);

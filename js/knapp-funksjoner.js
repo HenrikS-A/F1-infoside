@@ -37,8 +37,7 @@ function scrollNed() {
 
 
 
-function shadowEffektFunksjon() {
-    const navn = "Montreal";
+function shadowEffektFunksjon(navn) {
     //Legger til shadow bak banen som scrolles til
     document.getElementById(navn).style.boxShadow = "20px 20px 20px yellow";
     
@@ -46,63 +45,73 @@ function shadowEffektFunksjon() {
     setTimeout( () => {
         document.getElementById(navn).style.boxShadow = "none";
     }, 5000);
+    return navn;
 }
 
 function scrollMontreal() {
     const navn = "Montreal";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    //henter fram funksjonen og kjører den
-    shadowEffektFunksjon.call(this);
+    //henter fram funksjonen og kjører den, og variabelen 'navn' ...
+    //... fra shadowEffektFunksjon blir spesifisert etter komma
+    shadowEffektFunksjon.call(this, "Montreal");
 }
 function scrollTexas() {
     const navn = "Texas";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Texas");
 }
 function scrollMiami() {
     const navn = "Miami";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Miami");
 }
 function scrollMexico() {
     const navn = "Mexico";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Mexico");
 }
 function scrollBrasil() {
     const navn = "Brasil";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Brasil");
 }
 function scrollEuropa() {
     const navn = "Europa";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+
+    document.getElementById(navn).style.boxShadow = "0 20px yellow";
+    setTimeout( () => {
+        document.getElementById(navn).style.boxShadow = "none";
+    }, 5000);
 }
 function scrollBaku() {
     const navn = "Baku";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Baku");
 }
 function scrollMidtøsten() {
     const navn = "Midtøsten";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    
+    document.getElementById(navn).style.boxShadow = "0 20px yellow";
+    setTimeout( () => {
+        document.getElementById(navn).style.boxShadow = "none";
+    }, 5000);
 }
 function scrollJapan() {
     const navn = "Japan";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Japan");
 }
 function scrollSingapore() {
     const navn = "Singapore";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Singapore");
 }
 function scrollAustralia() {
     const navn = "Australia";
     document.getElementById(navn).scrollIntoView({behavior: "smooth"});
-    shadowEffektFunksjon.call(this);
+    shadowEffektFunksjon.call(this, "Australia");
 }
 
 
