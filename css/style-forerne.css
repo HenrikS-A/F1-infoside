@@ -127,3 +127,13 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
         gap: 3vw;
     }
 }
+@media (max-width: 950px) {
+    .innholdFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .innhold {
+        margin: 50px;
+        padding-bottom: 60px;
+    }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Førerne</title>
+    <link rel="icon" href="../ikoner/f1-logo-sort.png">
+
+    <link rel="stylesheet" href="../css/style-layout.css">
+    <link rel="stylesheet" href="../css/style-forerne-underside.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="hovedNav">
+            <div>
+                <a href="../index.html">
+                    <img class="logo" src="../ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+                </a>
+            </div>
+            <div id="hovedNavLenker">
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1>Kalender</h1>
+                    </div>
+                </a>
+                <a class="dropDown" onclick="visDropDown()">
+                    <div class="borderHøyre pilIkon">
+                        <h1>Resultater</h1>
+                        <div class="thick-arrow-down"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1 class="valgtSide">Førerne</h1>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1>Teamene</h1>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h1>Banene</h1>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <nav class="dropDownMeny">
+            <div class="borderHøyre">
+                <a href="#">Fører resultater</a>
+            </div>
+            <div class="dropDownMenyMargin">
+                <a href="#">Konstruktør resultater</a>
+            </div>
+        </nav>
+        <nav id="mobilNav">
+            <div>
+                <a href="index.html">
+                    <img class="logo" id="mobilLogo" src="../ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+                </a>
+            </div>
+            <div id="mobilMenyIkon">
+                <a onclick="visMobilDropDown()">
+                    <img src="../ikoner/hamburger-menu-ikon.png" alt="Meny knapp">
+                </a>
+            </div>
+            <div id="mobilExitIkon">
+                <a onclick="fjernMobilDropDown()">
+                    <img  src="../ikoner/exit-ikon.png" alt="Lukk meny knapp">
+                </a>
+            </div>
+        </nav>
+        <nav id="mobilDropDownMeny">
+            <a class="mobilMenyBorder" href="#">
+                Kalender
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Fører <br> resultater
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Konstruktør <br> resultater
+            </a>
+            <a class="mobilMenyBorder valgtSide" href="#">
+                Førerne
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Teamene
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Banene
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div id="mobilMenyOverlay"></div>
+            <div onclick="tilToppen()" id="tilToppen"><img id="pilOpp" src="../ikoner/pil-opp-ikon.png" alt="Pil opp ikon"></div>
+        </div>
+
+        <section>
+            <a class="tilbakeKnapp" href="../forerne.html">
+                <div class="arrow-left"></div>
+                <h5>Tilbake til førerne</h5>
+            </a>
+            <div class="gridContainer">
+                <div class="bilder">
+                    <img src="../bilder/førerne/CL-profil.png" alt="Bilde av Charles Leclerc">
+                    <a class="teamLenke" href="$">
+                        <img src="../bilder/bilene/ferrari-bil.png" alt="Bilde av Ferrari bilen">
+                    </a>
+                </div>
+                <div class="innhold">
+                    <div class="forerListe">
+                        <h3>Charles</h3>
+                        <h2>Leclerc</h2>
+                        <ul>
+                            <li>Fører for <a href="$">Ferrari</a></li>
+                            <li>Født: Monaco, Monte Carlo</li>
+                            <li>Første Grand Prix: Australia, 2018</li>
+                            <li>Podier: 24</li>
+                            <li>Seiere: 5</li>
+                            <li>Pole positions: 18</li>
+                            <li>Poeng i år: 308</li>
+                        </ul>
+                    </div>
+                    <div class="biografi">
+                        <h3>Biografi (engelsk):</h3>
+                        <p>Born in the Mediterranean idyll of Monaco, Leclerc arrived in F1 on a tidal wave of expectation.</p>
+                        <p>Practically peerless on his way to the GP3 and Formula 2 crowns, he showcased a dazzling array of skills from scorching pole positions, commanding victories – even when his car caught fire twice at Silverstone – to an ability to muscle his way through the pack. Winning back-to-back championships also taught Leclerc how to handle pressure, another useful tool in the big pond of Formula 1 racing.</p>
+                        <p>Stepping up to F1 in 2018, Leclerc showed flashes of ballistic pace on Saturdays and racing brilliance on Sundays, dragging his Sauber beyond its limits – and earning himself a money-can’t-buy race seat at Ferrari for 2019, stepping into the shoes of the Scuderia’s last world champion, Kimi Raikkonen. </p>
+                        <p>There he immediately put the cat among the proverbial pigeons, unafraid to go wheel-to-wheel with established number one, Sebastian Vettel. A maiden F1 victory at Spa was followed by another a week later on Ferrari’s hallowed home turf of Monza. The tifosi had found another new hero – who then became the first man to out-score Vettel over a season with the Scuderia, a feat he repeated in crushing fashion the following year.
+                        <p>Out of the car, Leclerc is modest and thoughtful - but then he is on his own very personal mission. This exciting young talent is racing for his late father Herve and his friend and mentor Jules Bianchi, the F1 driver who died in 2015. </p>
+                        <p>On the evidence so far, he is doing them both proud.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3>Se også:</h3>
+            <div class="andreForereGrid">
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/AA-forside.png" alt="Bilde av Alex Albon">
+                    <h3 class="forerTekst">Alex Albon</h3>
+                </a>
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/LN-forside.png" alt="Bilde av Lando Norris">
+                    <h3 class="forerTekst">Lando Norris</h3>
+                </a>
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/CS-forside.png" alt="Bilde av Carlos Sainz">
+                    <h3 class="forerTekst">Carlos Sainz</h3>
+                </a>
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/MV-forside.png" alt="Bilde av Max Verstappen">
+                    <h3 class="forerTekst">Max Verstappen</h3>
+                </a>
+            </div>
+
+
+
+
+        </section>
+    </main>
+    
+    <footer>
+        <section class="footerSoMe">
+            <a target="_blank" href="https://www.instagram.com/f1/">
+                <img src="../ikoner/instagram-ikon.png" alt="Instagram ikon">
+            </a>
+            <a target="_blank" href="https://twitter.com/f1">
+                <img id="twitterLogo" src="../ikoner/twitter-ikon.png" alt="Twitter ikon">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/Formula1/">
+                <img src="../ikoner/facebook-ikon.png" alt="Facebook ikon">
+            </a>
+        </section>
+        <section class="footerMeny">
+            <div>
+                <a href="#">Kalender</a>
+                <a href="#">Fører resultater</a>
+                <a href="#">Konstruktør resultater</a>
+            </div>
+            <div>
+                <a href="#">Førerne</a>
+                <a href="#">Teamene</a>
+                <a href="#">Banene</a>
+            </div>
+        </section>
+        <section class="footerInfo">
+            <div>
+                <img src="../ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+            </div>
+            <div id="kreditering">
+                <h2>Denne nettsiden er laget av:</h2>
+                <!-- Gjør at den lager en mail til mailadressen min -->
+                <a href="mailto:henrikstro@viken.no">Henrik Strøm-Andersen</a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/knapp-funksjoner.js"></script>
+</body>
+</html>

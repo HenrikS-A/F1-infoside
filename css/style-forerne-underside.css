@@ -1,0 +1,151 @@
+
+.tilbakeKnapp {
+    margin: 70px 10vw 0 10vw;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+}
+.arrow-left {
+    width: 7px;
+    height: 7px;
+    border: 2px solid #333;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(135deg);
+}
+.tilbakeKnapp h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 0 10vw 50px 10vw;
+    background-color: rgb(235, 235, 235);
+    padding: 50px;
+    border-radius: 20px;
+}
+.gridContainer img {
+    max-width: 100%;
+}
+.gridContainer div>img {
+    margin-bottom: 40px;
+}
+
+.teamLenke {
+    width: 100%;
+    height: 100%;
+    padding-top: 85px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.teamLenke:hover {
+    background-color: white;
+}
+
+.innhold {
+    grid-column: span 2;
+    margin: 75px 100px 10px 100px;
+}
+.innhold .biografi {
+    margin-top: 75px;
+}
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    text-decoration: none;
+}
+.innhold h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+    margin-top: -15px;
+}
+.innhold ul a {
+    display: inline;
+    color: black;
+}
+.innhold li {
+    margin: 5px;
+}
+.innhold a:hover {
+    color: #da0000;
+}
+
+
+section>h3 {
+    margin-left: 10vw; margin-right: 10vw;
+}
+.andreForereGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px 10vw 0 10vw;
+    gap: 40px;
+    padding-bottom: 120px;
+}
+.andreForereGrid>a {
+    position: relative;
+}
+
+.andreForereGrid>a:hover .forerBilde {
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+.andreForereGrid>a:hover .forerTekst {
+    opacity: 1;
+}
+
+.andreForereGrid img {
+    width: 100%;
+    transition: 0.5s;
+}
+.andreForereGrid h3 {
+    color: white;
+    font-weight: 900;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom :0;
+    margin: auto;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+@media (max-width: 930px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .gridContainer .bilder {
+        width: 100%;
+        max-width: 1000%;
+    }
+    .innhold {
+        margin-left: 20px; margin-right: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .gridContainer {
+        margin-left: 200px; margin-right: 200px;
+    }
+    section>h3 {
+        margin-left: 200px; margin-right: 200px;
+    }
+    .andreForereGrid {
+        margin-left: 200px; margin-right: 200px;
+    }
+}
