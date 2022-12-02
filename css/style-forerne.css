@@ -1,0 +1,124 @@
+main>section{
+    margin: 0 50px;
+}
+
+header nav .valgtSide, #mobilDropDownMeny .valgtSide {
+    color: #da0000;
+}
+
+#sideTittel {
+    margin: 20px 0 50px;
+    padding: 10px;
+    border-bottom: solid grey 1px;
+}
+#sideTittel>div {
+    display: flex;
+}
+#sideTittel h1 {
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px 20px;
+    margin: 50px;
+    border-top: solid #1b1b1b 8px;
+    border-right: solid #1b1b1b 8px;
+    border-top-right-radius: 20px;
+}
+
+
+.flexContainer {
+    padding-bottom: 100px;
+    margin-left: 150px; margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexContainer>div:nth-child(2n) .innholdFlex {
+    justify-content: flex-end;
+}
+
+.innholdFlex {
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 1050px;
+    gap: 5vw;
+}
+.innholdFlex:hover {
+    background-color: rgb(245, 245, 245);
+}
+.innholdFlex:hover .innholdBilde>.teamLogo {
+    opacity: 1;
+}
+.innholdFlex:hover .innholdBilde>.forerBilde {
+    transform: scale(103%);
+}
+.innholdFlex:hover .innhold>h3 {
+    transform: translate(-10%);
+}
+
+.innholdBilde {
+    position: relative;
+}
+.forerBilde {
+    width: 400px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.teamLogo {
+    width: 65px;
+    position: absolute;
+    bottom: -20px; left: 20px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.innhold {
+    margin: 100px 150px 50px 100px;
+    position: relative;
+}
+.innhold h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    text-decoration: none;
+    transition: 1s;
+}
+.innhold h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+    margin-top: -15px;
+}
+.innhold>a {
+    color: black;
+    margin-left: 25px;
+    position: absolute;
+    bottom: 20px; right: 0; left: 0;
+}
+.innhold ul {
+    margin-top: 30px;
+}
+.innhold li {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.innhold ul a {
+    display: inline;
+    color: black;
+}
+.innhold a:hover {
+    color: #da0000;
+}
+
+
+@media (min-width: 1800px) {
+    .innholdFlex {
+        gap: 3vw;
+    }
+}
