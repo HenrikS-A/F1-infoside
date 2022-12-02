@@ -1,4 +1,6 @@
-
+.valgtSide {
+    color: #da0000;
+}
 .tilbakeKnapp {
     margin: 70px 10vw 0 10vw;
     width: auto;
@@ -19,7 +21,6 @@
     font-size: 16px;
     font-weight: 600;
 }
-
 
 .gridContainer {
     display: grid;
@@ -124,6 +125,13 @@ section>h3 {
 }
 
 
+
+@media (max-width: 1350px) {
+    .andreForereGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 930px) {
     .gridContainer {
         grid-template-columns: 1fr;
@@ -136,7 +144,11 @@ section>h3 {
     .innhold {
         margin-left: 20px; margin-right: 20px;
     }
+    .andreForereGrid {
+        grid-template-columns: 1fr;
+    }
 }
+
 
 @media (min-width: 1920px) {
     .gridContainer {
