@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Førerne</title>
+    <link rel="icon" href="../ikoner/f1-logo-sort.png">
+
+    <link rel="stylesheet" href="../css/style-layout.css">
+    <link rel="stylesheet" href="../css/style-forerne-underside.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="hovedNav">
+            <div>
+                <a href="../index.html">
+                    <img class="logo" src="../ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+                </a>
+            </div>
+            <div id="hovedNavLenker">
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1>Kalender</h1>
+                    </div>
+                </a>
+                <a class="dropDown" onclick="visDropDown()">
+                    <div class="borderHøyre pilIkon">
+                        <h1>Resultater</h1>
+                        <div class="thick-arrow-down"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1 class="valgtSide">Førerne</h1>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="borderHøyre">
+                        <h1>Teamene</h1>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h1>Banene</h1>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <nav class="dropDownMeny">
+            <div class="borderHøyre">
+                <a href="#">Fører resultater</a>
+            </div>
+            <div class="dropDownMenyMargin">
+                <a href="#">Konstruktør resultater</a>
+            </div>
+        </nav>
+        <nav id="mobilNav">
+            <div>
+                <a href="index.html">
+                    <img class="logo" id="mobilLogo" src="../ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+                </a>
+            </div>
+            <div id="mobilMenyIkon">
+                <a onclick="visMobilDropDown()">
+                    <img src="../ikoner/hamburger-menu-ikon.png" alt="Meny knapp">
+                </a>
+            </div>
+            <div id="mobilExitIkon">
+                <a onclick="fjernMobilDropDown()">
+                    <img  src="../ikoner/exit-ikon.png" alt="Lukk meny knapp">
+                </a>
+            </div>
+        </nav>
+        <nav id="mobilDropDownMeny">
+            <a class="mobilMenyBorder" href="#">
+                Kalender
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Fører <br> resultater
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Konstruktør <br> resultater
+            </a>
+            <a class="mobilMenyBorder valgtSide" href="#">
+                Førerne
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Teamene
+            </a>
+            <a class="mobilMenyBorder" href="#">
+                Banene
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div id="mobilMenyOverlay"></div>
+            <div onclick="tilToppen()" id="tilToppen"><img id="pilOpp" src="../ikoner/pil-opp-ikon.png" alt="Pil opp ikon"></div>
+        </div>
+
+        <section>
+            <a class="tilbakeKnapp" href="../forerne.html">
+                <div class="arrow-left"></div>
+                <h5>Tilbake til førerne</h5>
+            </a>
+            <div class="gridContainer">
+                <div class="bilder">
+                    <img src="../bilder/førerne/MV-profil2.png" alt="Bilde av Mac Verstappen">
+                    <a class="teamLenke" href="$">
+                        <img src="../bilder/bilene/red-bull-bil.png" alt="Bilde av Red Bull bilen">
+                    </a>
+                </div>
+                <div class="innhold">
+                    <div class="forerListe">
+                        <h3>Max</h3>
+                        <h2>Verstappen</h2>
+                        <ul>
+                            <li>Fører for <a href="$">Red Bull</a></li>
+                            <li>Født: Belgia, Hasselt</li>
+                            <li>Første Grand Prix: Australia, 2015</li>
+                            <li>Podier: 77</li>
+                            <li>Seiere: 35</li>
+                            <li>Pole positions: 20</li>
+                            <li>Poeng i år: 454</li>
+                        </ul>
+                    </div>
+                    <div class="biografi">
+                        <h3>Biografi (engelsk):</h3>
+                        <p>Arriving as Formula 1’s youngest ever competitor at just 17 years old, Verstappen pushed his car, his rivals and the sport’s record books to the limit. The baby-faced Dutchman with the heart of a lion took the Toro Rosso – and then the Red Bull – by the horns with his instinctive racing style.</p>
+                        <p>F1’s youngest points scorer soon became its youngest race winner – at the age of 18 years and 228 days – with an opportunistic but controlled drive on debut for Red Bull in Barcelona 2016. A true wheel-to-wheel racer, another stunning drive in Brazil from the back of the pack to the podium on a treacherous wet track kept the plaudits coming.</p>
+                        <p>Verstappen’s no-holds-barred attitude and hard defending have sometimes landed him in hot water with his peers and paymasters. But the mistakes that initially marred his potential have given way to maturity, while the bravado and energy that make him a blockbuster talent have remained – and the victories have kept on coming, culminating in his first F1 drivers’ title following that already legendary, final-round showdown with Lewis Hamilton in 2021. </p>
+                        <p>The son of former F1 driver Jos Verstappen and super-quick karting Mum Sophie Kumpen, racing runs through his genes. Despite moving out of Dad’s house to live in Monaco, Verstappen remains close to his family, and though he’s not afraid to speak his mind, he can still be surprisingly shy.</p>
+                        <p>Having become the Netherlands' first world champion aged just 24, the expectations for the next generation’s leading light are sky high – but with Verstappen there’s a feeling that the sky’s the limit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Se også:</h3>
+            <div class="andreForereGrid">
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/AA-forside.png" alt="Bilde av Alex Albon">
+                    <h3 class="forerTekst">Alex Albon</h3>
+                </a>
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/LH-forside.png" alt="Bilde av Lewis Hamilton">
+                    <h3 class="forerTekst">Lewis Hamilton</h3>
+                </a>
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/PG-forside.png" alt="Bilde av Pierre Gasly">
+                    <h3 class="forerTekst">Pierre Gasly</h3>
+                </a>
+                <a href="$">
+                    <img class="forerBilde" src="../bilder/førerne/CL-forside.png" alt="Bilde av Charles Leclerc">
+                    <h3 class="forerTekst">Charles Leclerc</h3>
+                </a>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+        <section class="footerSoMe">
+            <a target="_blank" href="https://www.instagram.com/f1/">
+                <img src="../ikoner/instagram-ikon.png" alt="Instagram ikon">
+            </a>
+            <a target="_blank" href="https://twitter.com/f1">
+                <img id="twitterLogo" src="../ikoner/twitter-ikon.png" alt="Twitter ikon">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/Formula1/">
+                <img src="../ikoner/facebook-ikon.png" alt="Facebook ikon">
+            </a>
+        </section>
+        <section class="footerMeny">
+            <div>
+                <a href="#">Kalender</a>
+                <a href="#">Fører resultater</a>
+                <a href="#">Konstruktør resultater</a>
+            </div>
+            <div>
+                <a href="#">Førerne</a>
+                <a href="#">Teamene</a>
+                <a href="#">Banene</a>
+            </div>
+        </section>
+        <section class="footerInfo">
+            <div>
+                <img src="../ikoner/F1-logo-hvit.png" alt="Formel 1 logo">
+            </div>
+            <div id="kreditering">
+                <h2>Denne nettsiden er laget av:</h2>
+                <!-- Gjør at den lager en mail til mailadressen min -->
+                <a href="mailto:henrikstro@viken.no">Henrik Strøm-Andersen</a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../js/knapp-funksjoner.js"></script>
+</body>
+</html>
