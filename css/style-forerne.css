@@ -83,6 +83,7 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
 
 .innhold {
     margin: 100px 150px 50px 100px;
+    width: 350px;
     position: relative;
 }
 .innhold h3 {
