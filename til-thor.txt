@@ -1,6 +1,6 @@
 
 -   Jeg har prøvd å bruke noe javascript, og jeg minner om at du sa du 
-    kunne krysse av for noen av kompetansemålene hvis jeg dekker det i
+    kunne krysse av for noen av kompetansemålene hvis jeg dekker det 
     her i prosjektet.
 -   Legg merke til at jeg også har prøvd å lage alle nettsidene responsive 
     med Media Queries.
