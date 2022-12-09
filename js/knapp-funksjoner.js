@@ -34,7 +34,9 @@ function tilToppen() {
 function scrollNed() {
     document.getElementById("scrollHit").scrollIntoView({behavior: "smooth"});
 };
-
+function forsideScroll() {
+    window.scrollTo({top: 420, behavior: 'smooth'});
+}
 
 
 function shadowEffektFunksjon(navn) {
