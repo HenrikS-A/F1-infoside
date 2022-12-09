@@ -13,6 +13,7 @@ function visDropDown() {
     }
 };
 
+
 function visMobilDropDown () {
     document.getElementById("mobilMenyIkon").style.display = "none";
     document.getElementById("mobilExitIkon").style.display = "block";
@@ -27,6 +28,7 @@ function fjernMobilDropDown () {
 
     document.getElementById("mobilMenyOverlay").style.display = "none";
 };
+
 
 function tilToppen() {
     window.scrollTo({top: 0, behavior: "smooth"});
@@ -49,6 +51,7 @@ function shadowEffektFunksjon(navn) {
     }, 5000);
     return navn;
 };
+
 
 function scrollMontreal() {
     const navn = "Montreal";

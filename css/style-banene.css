@@ -352,6 +352,9 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     }
 }
 @media (max-width: 920px) {
+    #sideTittel h1{
+        text-align: left;
+    }
     #gridContainer{
         grid-template-columns: 1fr;
         border: none;

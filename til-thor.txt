@@ -1,1 +1,10 @@
-EVENTUELL FORKLARING AV NOE ...
+
+-   Jeg har prøvd å bruke noe javascript, og jeg minner om at du sa du 
+    kunne krysse av for noen av kompetansemålene hvis jeg dekker det i
+    her i prosjektet.
+-   Legg merke til at jeg også har prøvd å lage alle nettsidene responsive 
+    med Media Queries.
+-   Jeg lagde ikke en egen underside til alle 20 f1-førerne, men jeg lagde til
+    fem stykker: Leclerc, Verstappen, Hamilton, Albon og Gasly. Det står derfor
+    en "les mer" knapp på førerne-siden som ikke er linket opp til noe på
+    de resterende førerne.

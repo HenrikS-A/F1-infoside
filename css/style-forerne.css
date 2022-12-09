@@ -129,6 +129,9 @@ header nav .valgtSide, #mobilDropDownMeny .valgtSide {
     }
 }
 @media (max-width: 950px) {
+    #sideTittel h1{
+        text-align: left;
+    }
     .innholdFlex {
         flex-direction: column;
         align-items: center;
