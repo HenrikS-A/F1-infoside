@@ -8,3 +8,4 @@
     fem stykker: Leclerc, Verstappen, Hamilton, Albon og Gasly. Det står derfor
     en "les mer" knapp på førerne-siden som ikke er linket opp til noe på
     de resterende førerne.
+-   Jeg ser også at scroll behavior smooth ikke fungerte med safari.
